@@ -122,7 +122,7 @@ const DashboardScreen = () => {
 
 
   return (
-    <div className='p-8 min-h-screen '>
+    <div className='p-8 min-h-screen flex-grow'>
       {alertLaunched && (
         <p className='bg-black border border-red-600 border-1 text-red-600 px-4 py-2 rounded-md mb-6'>
           Une alerte a été lancée et sera active jusqu'au{' '}
