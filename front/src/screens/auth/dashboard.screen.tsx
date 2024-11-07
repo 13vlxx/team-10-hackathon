@@ -46,10 +46,10 @@ const DashboardScreen = () => {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [dashboardPeriod, setDashboardPeriod] = useState<string>('');
   const availableDates = [
-    { date: '12/09/2024', catastrophe: 'Inondation massive' },
-    { date: '23/05/2025', catastrophe: 'Tempête de neige' },
-    { date: '15/04/2024', catastrophe: 'Séisme majeur' },
-    { date: '23/01/2024', catastrophe: 'Ouragan' }
+    { date: '12/09/2024', catastrophe: 'Inondation' },
+    { date: '23/05/2025', catastrophe: 'Forte pluie' },
+    { date: '15/04/2024', catastrophe: 'Forte pluie' },
+    { date: '23/01/2024', catastrophe: 'Tremblement de terre' }
   ];
 
 
@@ -278,11 +278,11 @@ const DashboardScreen = () => {
                   <SelectValue placeholder="Sélectionner une date" />
                 </SelectTrigger>
                 <SelectContent>
-                <SelectGroup>
+                  <SelectGroup>
                     <SelectLabel>Dates disponibles</SelectLabel>
                     {availableDates.map((event) => (
                       <SelectItem key={event.date} value={event.date}>
-                        {event.date}
+                        {event.date} - {event.catastrophe}
                       </SelectItem>
                     ))}
                   </SelectGroup>
