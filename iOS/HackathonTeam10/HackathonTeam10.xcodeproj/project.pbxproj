@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9B490ACB2CDDFE7B00A4C68D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9B490ACA2CDDFE7B00A4C68D /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F114B3592CDCAAA600046ED6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B490ACB2CDDFE7B00A4C68D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = HackathonTeam10;
 			packageProductDependencies = (
+				9B490ACA2CDDFE7B00A4C68D /* Alamofire */,
 			);
 			productName = HackathonTeam10;
 			productReference = F114B3482CDCAAA300046ED6 /* HackathonTeam10.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = F114B33F2CDCAAA300046ED6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9B490AC92CDDFE7B00A4C68D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F114B3492CDCAAA300046ED6 /* Products */;
 			projectDirPath = "";
@@ -552,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B490AC92CDDFE7B00A4C68D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B490ACA2CDDFE7B00A4C68D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B490AC92CDDFE7B00A4C68D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F114B3402CDCAAA300046ED6 /* Project object */;
 }
